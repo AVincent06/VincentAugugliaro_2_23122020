@@ -1,0 +1,56 @@
+/************ Définition des polices personalisées ***********/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/*********** Définition des couleurs personalisées ***********/
+:root
+{
+    --myBlue:       #0065fc; /* var(--myBlue); */
+    --myLightBlue:  #deebff; /* var(--myLightBlue); */
+    --myGray:       #f2f2f2; /* var(--myGray); */
+}
+
+/***************** Redéfinition des balises ******************/
+body
+{
+    background: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+header
+{
+    height : 89px;
+}
+
+/******************** Définition des CLASS *******************/
+.between
+{
+    justify-content: space-between
+}
+.bottom
+{
+    align-items: flex-end;
+}
+
+.container
+{
+    display:flex;
+}
+
+.right
+{
+    justify-content: flex-end
+}
+
+/********************* Définition des ID *********************/
+#bloc_page
+{
+    width: 1440px;
+    margin: auto;
+}
+
+#logo
+{
+    margin-left: 3.68%;
+}
+
+/*************************************************************/
