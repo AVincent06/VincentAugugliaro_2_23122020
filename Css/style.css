@@ -9,7 +9,6 @@
 }
 
 /***************** Redéfinition des balises ******************/
-/*{border: 1px solid black; /* pour test */}
 body {
     background-color: #ffffff;
     font-family: 'Raleway', sans-serif;
@@ -77,7 +76,7 @@ header {
 #logo {
     left: 45px;
     position: absolute;
-    top: 44px
+    top: 44px;
 }
 
 /*************************************************************/
