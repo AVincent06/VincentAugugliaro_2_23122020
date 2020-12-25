@@ -2,55 +2,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 /*********** Définition des couleurs personalisées ***********/
-:root
-{
+:root {
     --myBlue:       #0065fc; /* var(--myBlue); */
     --myLightBlue:  #deebff; /* var(--myLightBlue); */
     --myGray:       #f2f2f2; /* var(--myGray); */
 }
 
 /***************** Redéfinition des balises ******************/
-body
-{
-    background: #ffffff;
+/*{border: 1px solid black; /* pour test */}
+body {
+    background-color: #ffffff;
     font-family: 'Raleway', sans-serif;
 }
 
-header
-{
+header {
     height : 89px;
+    position: relative;
+    top: -8px;
 }
 
 /******************** Définition des CLASS *******************/
-.between
-{
-    justify-content: space-between
+.between {
+    justify-content: space-between;
 }
-.bottom
-{
+
+.bottom {
     align-items: flex-end;
 }
 
-.container
-{
-    display:flex;
+.container {
+    display: flex;
 }
 
-.right
-{
-    justify-content: flex-end
+.menu{
+    display: flex;          /* technique pour centrer verticalement */
+    flex-direction: column; /* technique pour centrer verticalement */
+    height: 100%;
+    justify-content: center;/* technique pour centrer verticalement */
+    text-align: center ;
+    width: 162px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.off a {
+    color: #000000;
+}
+
+.on {
+    border-top: 2px solid var(--myBlue);
+}
+
+.on a {
+    color: var(--myBlue);
+}
+
+.register{
+    color: var(--myBlue);
+    font-weight: bold;
+}
+
+.right {
+    justify-content: flex-end;
 }
 
 /********************* Définition des ID *********************/
-#bloc_page
-{
-    width: 1440px;
+#bloc-page {
     margin: auto;
+    width: 1440px;
 }
 
-#logo
-{
-    margin-left: 3.68%;
+#logo {
+    left: 45px;
+    position: absolute;
+    top: 44px
 }
 
 /*************************************************************/
