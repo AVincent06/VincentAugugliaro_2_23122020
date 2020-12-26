@@ -10,19 +10,27 @@
 
 /***************** Redéfinition des balises ******************/
 body {
-    background-color: #ffffff;
+    background-color: white;
     font-family: 'Raleway', sans-serif;
 }
 
 header {
-    height : 89px;
+    height : 110px;
     position: relative;
     top: -8px;
+}
+
+header nav {
+    width: 35%;
 }
 
 /******************** Définition des CLASS *******************/
 .between {
     justify-content: space-between;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .bottom {
@@ -36,6 +44,7 @@ header {
 .menu{
     display: flex;          /* technique pour centrer verticalement */
     flex-direction: column; /* technique pour centrer verticalement */
+    font-weight: bold;
     height: 100%;
     justify-content: center;/* technique pour centrer verticalement */
     text-align: center ;
@@ -44,6 +53,10 @@ header {
 
 .menu a {
     text-decoration: none;
+}
+
+.off a {
+    border-top: 2px solid white;
 }
 
 .off a {
@@ -59,12 +72,16 @@ header {
 }
 
 .register{
+    border-top: 2px solid white;
     color: var(--myBlue);
-    font-weight: bold;
 }
 
 .right {
     justify-content: flex-end;
+}
+
+.size-1em3 {
+    font-size: 1.3em;
 }
 
 /********************* Définition des ID *********************/
@@ -77,6 +94,14 @@ header {
     left: 45px;
     position: absolute;
     top: 44px;
+}
+
+#tools {
+    padding-left: 45px;
+}
+
+#tools p {
+    line-height: 1.6em;
 }
 
 /*************************************************************/
