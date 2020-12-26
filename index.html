@@ -5,6 +5,7 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="Css/style.css" />
 		<title>Reservia</title>
+		<script src="https://kit.fontawesome.com/a040aa6bc7.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
@@ -18,7 +19,7 @@
 				<nav class="container">
 					<div class="menu on"><a href="#hosting">Hébergements</a></div>
 					<div class="menu off"><a href="#activity">Activités</a></div>
-					<div class="menu register"><a href="#">S'inscrire</a></div>
+					<div class="menu register "><a href="#">S'inscrire</a></div>
 				</nav>
 			</header>
 			<section id="tools">
@@ -26,13 +27,13 @@
 					<span class="bold size-1em3">Trouvez votre hébergement pour des vacances de rêve</span><br>
 					En plein centre ville ou en pleine nature
 				</p>
-				<form method="POST" action="#">
-					<p>
-						<input type="search" name="recherche" id="recherche">
-						<button>Rechercher</button>
-					</p>
-				</form>
-				<div id="search"></div>
+				<div id="search" class="container">
+					<div class="middle" id="recherche-gauche"><i class="fas fa-map-marker-alt"></i></div>
+					<form method="POST" action="#">
+						<input id="recherche"  name="recherche" type="search" value="   Marseille, France">
+						<button id="recherche-bouton" type="button">Rechercher</button>
+					</form>
+				</div>
 				<div id="filter"></div>
 			</section>
 			<section id="hosting">
