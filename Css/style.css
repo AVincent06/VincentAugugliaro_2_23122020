@@ -29,6 +29,10 @@ header nav {
     justify-content: space-between;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .bottom {
     align-items: flex-end;
 }
@@ -76,6 +80,10 @@ header nav {
     justify-content: flex-end;
 }
 
+.size-1em3 {
+    font-size: 1.3em;
+}
+
 /********************* Définition des ID *********************/
 #bloc-page {
     margin: auto;
@@ -86,6 +94,14 @@ header nav {
     left: 45px;
     position: absolute;
     top: 44px;
+}
+
+#tools {
+    padding-left: 45px;
+}
+
+#tools p {
+    line-height: 1.6em;
 }
 
 /*************************************************************/
