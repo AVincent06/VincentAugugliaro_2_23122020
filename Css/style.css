@@ -41,10 +41,15 @@ header nav {
     display: flex;
 }
 
+.middle {
+    display: flex;          /* technique pour centrer verticalement */
+    flex-direction: column; /* technique pour centrer verticalement */
+    justify-content: center;/* technique pour centrer verticalement */
+}
+
 .menu{
     display: flex;          /* technique pour centrer verticalement */
     flex-direction: column; /* technique pour centrer verticalement */
-    font-weight: bold;
     height: 100%;
     justify-content: center;/* technique pour centrer verticalement */
     text-align: center ;
@@ -57,10 +62,7 @@ header nav {
 
 .off a {
     border-top: 2px solid white;
-}
-
-.off a {
-    color: #000000;
+    color: black;
 }
 
 .on {
@@ -74,6 +76,7 @@ header nav {
 .register{
     border-top: 2px solid white;
     color: var(--myBlue);
+    font-weight: bold;
 }
 
 .right {
@@ -82,6 +85,10 @@ header nav {
 
 .size-1em3 {
     font-size: 1.3em;
+}
+
+.top {
+    align-items: flex-start;
 }
 
 /********************* Définition des ID *********************/
@@ -94,6 +101,37 @@ header nav {
     left: 45px;
     position: absolute;
     top: 44px;
+}
+
+#recherche {
+    border: 1px solid var(--myGray);
+    border-right: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 51px;
+    width: 230px;
+}
+
+#recherche-bouton {
+    border: none;
+    border-radius: 0px 16px 16px 0px;
+    background-color: var(--myBlue);
+    color: white;
+    font-size: 1.2em;
+    height: 51px;
+    left: -4px;
+    position:relative;
+    width: 134px;
+}
+
+#recherche-gauche {
+    border-radius: 16px 0px 0px 16px;
+    background-color: var(--myGray);
+    color: black;
+    height: 51px;
+    position: relative;
+    text-align: center;
+    width: 52px;
 }
 
 #tools {
