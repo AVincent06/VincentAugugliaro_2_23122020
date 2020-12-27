@@ -37,6 +37,31 @@ header nav {
     align-items: flex-end;
 }
 
+.filter-button {
+    border: 2px solid #d9d9d9;
+    border-left: none;
+    border-radius: 0px 50px 50px 0px;
+    background-color: white;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 46px;
+    margin-left: 48px;
+    padding-right: 21px;
+}
+
+.filter-icon {
+    border-radius: 25px 25px 25px 25px;
+    background-color: var(--myLightBlue);
+    color: var(--myBlue);
+    height: 51px;
+    left: -20px;
+    position: relative;
+    text-align: center;
+    width: 51px;
+}
+
 .container {
     display: flex;
 }
@@ -48,10 +73,7 @@ header nav {
 }
 
 .menu{
-    display: flex;          /* technique pour centrer verticalement */
-    flex-direction: column; /* technique pour centrer verticalement */
     height: 100%;
-    justify-content: center;/* technique pour centrer verticalement */
     text-align: center ;
     width: 162px;
 }
@@ -95,6 +117,27 @@ header nav {
 #bloc-page {
     margin: auto;
     width: 1440px;
+}
+
+#filter {
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 112px;
+}
+
+#filter-title {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#info {
+    border: 1px solid  #d9d9d9;
+    border-radius: 12px 12px 12px 12px;
+    color: var(--myBlue);
+    height: 24px;
+    margin-right: 15px;
+    text-align: center;
+    width: 24px;
 }
 
 #logo {
