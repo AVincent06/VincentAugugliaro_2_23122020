@@ -29,12 +29,36 @@ header nav {
     justify-content: space-between;
 }
 
-.bold {
-    font-weight: bold;
+.blue {
+    color: var(--myBlue);
 }
 
 .bottom {
     align-items: flex-end;
+}
+
+.card {
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 16px 16px 16px 16px;
+    height: 199px;
+    margin: 15px;
+    width: 246px;
+}
+
+.card img {
+    border-radius: 11px 11px 0px 0px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.description {
+    background-color: white;
+    position: relative;
+    top: -45px;
 }
 
 .filter-button {
@@ -62,8 +86,10 @@ header nav {
     width: 51px;
 }
 
-.container {
-    display: flex;
+.gray {
+    color: var(--myGray);
+    left: -4px;
+    position: relative;
 }
 
 .middle {
@@ -105,8 +131,9 @@ header nav {
     justify-content: flex-end;
 }
 
-.size-1em3 {
+.title {
     font-size: 1.3em;
+    font-weight: bold;
 }
 
 .top {
@@ -128,6 +155,10 @@ header nav {
 #filter-title {
     font-size: 1.1em;
     font-weight: bold;
+}
+
+#hosting-classic {
+    background-color: var(--myGray);
 }
 
 #info {
