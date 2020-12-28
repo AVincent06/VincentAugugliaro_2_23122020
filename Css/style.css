@@ -40,25 +40,37 @@ header nav {
 .card {
     background-color: white;
     border: 5px solid white;
-    border-radius: 16px 16px 16px 16px;
-    height: 199px;
+    border-radius: 21px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 189px;
     margin: 15px;
-    width: 246px;
+    overflow: hidden;
+    position: relative;
+    width: 245px;
 }
 
-.card img {
-    border-radius: 11px 11px 0px 0px;
+.card-description {
+    background-color: white;
+    line-height: 1.4em;
+    padding-left: 12px;
+    padding-top: 5px;
+    position: absolute;
+    top: 119px;
     width: 100%;
+}
+
+.card-detail {
+    font-size: 0.8em;
+}
+
+.card-frame {
+    height: 114px;
+    position:absolute;
+    width: 245px; 
 }
 
 .container {
     display: flex;
-}
-
-.description {
-    background-color: white;
-    position: relative;
-    top: -45px;
 }
 
 .filter-button {
@@ -140,6 +152,10 @@ header nav {
     align-items: flex-start;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 /********************* Définition des ID *********************/
 #bloc-page {
     margin: auto;
@@ -157,8 +173,22 @@ header nav {
     font-weight: bold;
 }
 
+#hosting {
+    margin-left: 45px;
+    margin-top: 36px;
+}
+
 #hosting-classic {
     background-color: var(--myGray);
+    border-radius: 17px;
+    padding: 24px;
+    width: 62%;
+}
+
+#hosting-title {
+    margin-bottom: 10px;
+    margin-left: 14px;
+    margin-top: 16px;
 }
 
 #info {
@@ -175,6 +205,25 @@ header nav {
     left: 45px;
     position: absolute;
     top: 44px;
+}
+
+#photo-1 {
+    background: url('../Images/hosting/marcus-loke-WQJvWU_HZFo-unsplash.jpg') center/100% no-repeat;
+}
+#photo-2 {
+    background: url('../Images/hosting/fred-kleber-gTbaxaVLvsg-unsplash.jpg') center/100% no-repeat;
+}
+#photo-3 {
+    background: url('../Images/hosting/reisetopia-B8WIgxA_PFU-unsplash.jpg') center/100% no-repeat;
+}
+#photo-4 {
+    background: url('../Images/hosting/annie-spratt-Eg1qcIitAuA-unsplash.jpg') center/100% no-repeat;
+}
+#photo-5 {
+    background: url('../Images/hosting/nicate-lee-kT-ZyaiwBe0-unsplash.jpg') center/100% no-repeat;
+}
+#photo-6 {
+    background: url('../Images/hosting/febrian-zakaria-M6S1WvfW68A-unsplash.jpg') center/100% no-repeat;
 }
 
 #recherche {
