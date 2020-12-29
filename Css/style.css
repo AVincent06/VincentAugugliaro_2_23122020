@@ -25,6 +25,33 @@ header nav {
 }
 
 /******************** Définition des CLASS *******************/
+.activity-card {
+    background-color: white;
+    border-radius: 21px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-height: 446px;
+    overflow: hidden;
+    max-width: 302px;
+}
+
+.activity-column {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.activity-description {
+    background-color: white;
+    min-height: 57px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.activity-frame-xl {
+    height: 389px;
+    width: 302px;     
+}
+
 .between {
     justify-content: space-between;
 }
@@ -191,6 +218,11 @@ header nav {
 }
 
 /********************* Définition des ID *********************/
+#activity {
+    margin-left: 45px;
+    margin-top: 36px;
+}
+
 #bloc-page {
     margin: auto;
     width: 1440px;
@@ -296,6 +328,10 @@ header nav {
 
 #photo-9 {
     background: url('../Images/hosting/febrian-zakaria-sjvU0THccQA-unsplash.jpg') center/100% no-repeat;
+}
+
+#photo-10 {
+    background: url('../Images/activity/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg') center/auto 100% no-repeat;
 }
 
 #recherche {
