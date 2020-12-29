@@ -25,6 +25,33 @@ header nav {
 }
 
 /******************** Définition des CLASS *******************/
+.activity-card {
+    background-color: white;
+    border-radius: 21px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-height: 446px;
+    overflow: hidden;
+    max-width: 302px;
+}
+
+.activity-column {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.activity-description {
+    background-color: white;
+    min-height: 57px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.activity-frame-xl {
+    height: 389px;
+    width: 302px;     
+}
+
 .between {
     justify-content: space-between;
 }
@@ -67,6 +94,40 @@ header nav {
     height: 114px;
     position:absolute;
     width: 245px; 
+}
+
+.card-h {
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 21px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    max-height: 144px;
+    margin-bottom: 33px;
+    margin-left: 37px;
+    margin-right: 37px;
+    overflow: hidden;
+    position: relative;
+    width: 343px;
+}
+
+.card-h-description {
+    background-color: white;
+    line-height: 1.4em;
+    padding-left: 21px;
+    padding-top: 14px;
+    width: 100%;
+    position: relative;
+}
+
+.card-h-frame {
+    height: 134px;
+    min-width: 127px;     
+}
+
+.card-h-stars {
+    position: absolute;
+    top: 105px;
 }
 
 .container {
@@ -157,6 +218,11 @@ header nav {
 }
 
 /********************* Définition des ID *********************/
+#activity {
+    margin-left: 45px;
+    margin-top: 36px;
+}
+
 #bloc-page {
     margin: auto;
     width: 1440px;
@@ -185,6 +251,27 @@ header nav {
     width: 62%;
 }
 
+#hosting-more {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 22px;
+    margin-left: 16px;
+    margin-top: 24px;
+}
+
+#hosting-popular {
+    background-color: var(--myGray);
+    border-radius: 17px;
+    margin-left: 40px;
+}
+
+#hosting-popular-title {
+    margin-bottom: 33px;
+    margin-left: 37px;
+    margin-right: 37px;
+    margin-top: 40px;
+}
+
 #hosting-title {
     margin-bottom: 10px;
     margin-left: 14px;
@@ -210,20 +297,41 @@ header nav {
 #photo-1 {
     background: url('../Images/hosting/marcus-loke-WQJvWU_HZFo-unsplash.jpg') center/100% no-repeat;
 }
+
 #photo-2 {
     background: url('../Images/hosting/fred-kleber-gTbaxaVLvsg-unsplash.jpg') center/100% no-repeat;
 }
+
 #photo-3 {
     background: url('../Images/hosting/reisetopia-B8WIgxA_PFU-unsplash.jpg') center/100% no-repeat;
 }
+
 #photo-4 {
     background: url('../Images/hosting/annie-spratt-Eg1qcIitAuA-unsplash.jpg') center/100% no-repeat;
 }
+
 #photo-5 {
     background: url('../Images/hosting/nicate-lee-kT-ZyaiwBe0-unsplash.jpg') center/100% no-repeat;
 }
+
 #photo-6 {
     background: url('../Images/hosting/febrian-zakaria-M6S1WvfW68A-unsplash.jpg') center/100% no-repeat;
+}
+
+#photo-7 {
+    background: url('../Images/hosting/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg') center/auto 100% no-repeat;
+}
+
+#photo-8 {
+    background: url('../Images/hosting/aw-creative-VGs8z60yT2c-unsplash.jpg') center/auto 100% no-repeat;
+}
+
+#photo-9 {
+    background: url('../Images/hosting/febrian-zakaria-sjvU0THccQA-unsplash.jpg') center/100% no-repeat;
+}
+
+#photo-10 {
+    background: url('../Images/activity/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg') center/auto 100% no-repeat;
 }
 
 #recherche {
