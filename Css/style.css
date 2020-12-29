@@ -36,7 +36,7 @@ header nav {
 
 .activity-column {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -49,6 +49,26 @@ header nav {
 
 .activity-frame-xl {
     height: 389px;
+    width: 302px;     
+}
+
+.activity-frame-l {
+    height: 180px;
+    width: 302px;     
+}
+
+.activity-frame-m {
+    height: 150px;
+    width: 302px;     
+}
+
+.activity-frame-s {
+    height: 140px;
+    width: 302px;     
+}
+
+.activity-frame-xs {
+    height: 109px;
     width: 302px;     
 }
 
@@ -70,7 +90,7 @@ header nav {
     border-radius: 21px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 189px;
-    margin: 15px;
+    margin-bottom: 29px;
     overflow: hidden;
     position: relative;
     width: 245px;
@@ -221,6 +241,11 @@ header nav {
 #activity {
     margin-left: 45px;
     margin-top: 36px;
+    max-width: 1337px;
+}
+
+#activity-title {
+    margin-bottom: 25px;
 }
 
 #bloc-page {
@@ -240,8 +265,10 @@ header nav {
 }
 
 #hosting {
+    margin-bottom: 60px;
     margin-left: 45px;
     margin-top: 36px;
+    max-width: 1337px;
 }
 
 #hosting-classic {
@@ -262,7 +289,6 @@ header nav {
 #hosting-popular {
     background-color: var(--myGray);
     border-radius: 17px;
-    margin-left: 40px;
 }
 
 #hosting-popular-title {
@@ -273,7 +299,7 @@ header nav {
 }
 
 #hosting-title {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     margin-left: 14px;
     margin-top: 16px;
 }
@@ -332,6 +358,26 @@ header nav {
 
 #photo-10 {
     background: url('../Images/activity/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg') center/auto 100% no-repeat;
+}
+
+#photo-11 {
+    background: url('../Images/activity/paul-hermann-QFTrLdQIRhI-unsplash.jpg') center/100% no-repeat;
+}
+
+#photo-12 {
+    background: url('../Images/activity/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg') center/100% no-repeat;
+}
+
+#photo-13 {
+    background: url('../Images/activity/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg') center/auto 100% no-repeat;
+}
+
+#photo-14 {
+    background: url('../Images/activity/florian-wehde-xW9e8gdotxI-unsplash.jpg') center/100% no-repeat;
+}
+
+#photo-15 {
+    background: url('../Images/activity/lena-paulin-wH2-EJoDcV0-unsplash.jpg') center/100% no-repeat;
 }
 
 #recherche {
