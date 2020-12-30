@@ -18,7 +18,8 @@ body {
 footer {
     background-color: var(--myGray);
     max-height: 218px;
-    padding: 50px;
+    padding:  50px;
+    padding-top: 30px;
 }
 
 footer a {
@@ -56,6 +57,10 @@ header nav {
     max-height: 446px;
     overflow: hidden;
     max-width: 302px;
+}
+
+.activity-card:hover {
+    cursor: pointer;
 }
 
 .activity-column {
@@ -120,6 +125,10 @@ header nav {
     width: 245px;
 }
 
+.card:hover {
+    cursor: pointer;
+}
+
 .card-description {
     background-color: white;
     line-height: 1.4em;
@@ -155,6 +164,10 @@ header nav {
     width: 343px;
 }
 
+.card-h:hover {
+    cursor: pointer;
+}
+
 .card-h-description {
     background-color: white;
     line-height: 1.4em;
@@ -178,6 +191,15 @@ header nav {
     display: flex;
 }
 
+.container:hover > .disk {
+    transform: rotate(0deg);
+}
+
+.disk {
+    transform: rotate(-360deg);
+	transition: transform 500ms ease-in-out;
+}
+
 .filter-button {
     border: 2px solid #d9d9d9;
     border-left: none;
@@ -190,6 +212,10 @@ header nav {
     height: 46px;
     margin-left: 48px;
     padding-right: 21px;
+}
+
+.filter-button:hover {
+    border-color: var(--myLightBlue);
 }
 
 .filter-icon {
@@ -268,7 +294,7 @@ header nav {
 /********************* Définition des ID *********************/
 #activity {
     margin-bottom: 60px;
-    margin-left: 45px;
+    margin-left: 50px;
     margin-top: 36px;
     max-width: 1337px;
 }
@@ -288,6 +314,22 @@ header nav {
     height: 112px;
 }
 
+#filter-economic:hover {
+    cursor: pointer;
+}
+
+#filter-family:hover {
+    cursor: pointer;
+}
+
+#filter-romantic:hover {
+    cursor: pointer;
+}
+
+#filter-pets:hover {
+    cursor: pointer;
+}
+
 #filter-title {
     font-size: 1.1em;
     font-weight: bold;
@@ -295,7 +337,7 @@ header nav {
 
 #hosting {
     margin-bottom: 60px;
-    margin-left: 45px;
+    margin-left: 50px;
     margin-top: 36px;
     max-width: 1337px;
 }
@@ -440,7 +482,7 @@ header nav {
 }
 
 #tools {
-    padding-left: 45px;
+    padding-left: 53px;
 }
 
 #tools p {
