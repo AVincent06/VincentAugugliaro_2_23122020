@@ -10,6 +10,7 @@
 
 	<body>
 		<div id="bloc-page">
+			<!-- ******************** SECTION : EN-TETE ******************** -->
 			<header class="container between">
 				<div id="logo">
 					<svg width="97" height="45" viewBox="0 0 97 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,6 +23,8 @@
 					<div class="middle menu register "><a href="#">S'inscrire</a></div>
 				</nav>
 			</header>
+
+			<!-- ******************** SECTION : RECHERCHE ET FILTRES ******************** -->
 			<section id="tools">
 				<p>
 					<span class="title">Trouvez votre hébergement pour des vacances de rêve</span><br>
@@ -35,7 +38,7 @@
 					</form>
 				</div>
 				<div id="filter" class="middle">
-					<div class="container">
+					<div class="container between wrap">
 						<div id="filter-title" class="middle">Filtres</div> 
 						<div id="filter-economic" class="filter-button middle">
 							<div class="container">
@@ -58,7 +61,7 @@
 						<div id="filter-pets" class="filter-button middle">
 							<div class="container">
 								<div class="disk filter-icon middle"><i class="fas fa-dog"></i></div>
-								<div class="middle">Animaux autorisés</div>
+								<div class="middle">Animaux&nbsp;autorisés</div>
 							</div>
 						</div>
 					</div>
@@ -68,10 +71,12 @@
 					<div class="middle">Plus de 500 logements sont disponibles dans cette ville</div> 
 				</div>
 			</section>
-			<section id="hosting" class="container between">
+
+			<!-- ******************** SECTION : HEBERGEMENTS ******************** -->
+			<section id="hosting">
 				<article id="hosting-classic">
 					<div id="hosting-title" class="title">Hébergements à Marseille</div>
-					<div class="container wrap between">
+					<div id="activity-container">
 						<div class="card" onclick="location.href='#';">
 							<div class="card-frame" id="photo-1"></div>
 							<div class="card-description">
@@ -132,43 +137,47 @@
 						<div>Les plus populaires</div> 
 						<div><i class="fas fa-chart-line"></i></div> 
 					</div>
-					<div class="card-h"  onclick="location.href='#';">
-						<div class="card-h-frame" id="photo-7"></div>
-						<div class="card-h-description">
-							<strong>Hôtel Le soleil du matin</strong><br>
-							<span class="card-detail">Nuit à partir de <strong>128€</strong></span><br>
-							<div class="card-h-stars">
-								<span class="card-detail blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-							</div>
-						</div> 
-					</div>
-					<div class="card-h"  onclick="location.href='#';">
-						<div class="card-h-frame" id="photo-8"></div>
-						<div class="card-h-description">
-							<strong>Au c&#339;ur de l'eau Chambres d'hôtes</strong><br>
-							<span class="card-detail">Nuit à partir de <strong>71€</strong></span><br>
-							<div class="card-h-stars">
-								<span class="card-detail blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-								<span class="card-detail gray"><i class="fas fa-star"></i></span>
-							</div>
-						</div> 
-					</div>
-					<div class="card-h"  onclick="location.href='#';">
-						<div class="card-h-frame" id="photo-9"></div>
-						<div class="card-h-description">
-							<strong>Hôtel Tout bleu et Blanc</strong><br>
-							<span class="card-detail">Nuit à partir de <strong>68€</strong></span><br>
-							<div class="card-h-stars">
-								<span class="card-detail blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-								<span class="card-detail gray"><i class="fas fa-star"></i></span>
-							</div>
-						</div> 
+					<div id="card-h-container">
+						<div class="card-h"  onclick="location.href='#';">
+							<div class="card-h-frame" id="photo-7"></div>
+							<div class="card-h-description">
+								<strong>Hôtel Le soleil du matin</strong><br>
+								<span class="card-detail">Nuit à partir de <strong>128€</strong></span><br>
+								<div class="card-h-stars">
+									<span class="card-detail blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+								</div>
+							</div> 
+						</div>
+						<div class="card-h"  onclick="location.href='#';">
+							<div class="card-h-frame" id="photo-8"></div>
+							<div class="card-h-description">
+								<strong>Au c&#339;ur de l'eau Chambres d'hôtes</strong><br>
+								<span class="card-detail">Nuit à partir de <strong>71€</strong></span><br>
+								<div class="card-h-stars">
+									<span class="card-detail blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+									<span class="card-detail gray"><i class="fas fa-star"></i></span>
+								</div>
+							</div> 
+						</div>
+						<div class="card-h"  onclick="location.href='#';">
+							<div class="card-h-frame" id="photo-9"></div>
+							<div class="card-h-description">
+								<strong>Hôtel Tout bleu et Blanc</strong><br>
+								<span class="card-detail">Nuit à partir de <strong>68€</strong></span><br>
+								<div class="card-h-stars">
+									<span class="card-detail blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+									<span class="card-detail gray"><i class="fas fa-star"></i></span>
+								</div>
+							</div> 
+						</div>
 					</div>
 				</aside>
 			</section>
+
+			<!-- ******************** SECTION : ACTIVITES ******************** -->
 			<section id="activity">
 				<div id="activity-title" class="title">Activités à Marseille</div>
-				<div class="container between">
+				<div id="activity-container">
 					<div class="activity-column"> <!--Colonne 1 départ à gauche-->
 						<div class="activity-card" onclick="location.href='#';">
 							<div class="activity-frame-xl" id="photo-10"></div>
@@ -203,29 +212,54 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- ******************** SECTION : PIED DE PAGE ******************** -->
 			<footer>
 				<nav>
-					<table>
-						<tr>
-							<th>A propos</th>
-							<th>Nos hébergements</th>
-							<th>Assistance</th>
-						</tr>
-						<tr>
-							<td><a href="#">Fonctionnement du site</a></td>
-							<td><a href="#">Charte qualité</a></td>
-							<td><a href="#">Centre d'aide</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">Conditions générales de vente</a></td>
-							<td><a href="#">Soumettre votre hôtel</a></td>
-							<td><a href="#">Nous contacter</a></td>
-						</tr>
-						<tr>
-							<td colspan="3"><a href="#">Données et confidentialité</a></td>
-						</tr>
-					</table>
-
+					<div id="footer-container">
+						<div class="footer-column">
+							<table>
+								<tr>
+									<th>A propos</th>
+								</tr>
+								<tr>
+									<td><a href="#">Fonctionnement du site</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">Conditions générales de vente</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">Données et confidentialité</a></td>
+								</tr>
+							</table>
+						</div>
+						<div class="footer-column">
+							<table>
+								<tr>
+									<th>Nos hébergements</th>
+								</tr>
+								<tr>
+									<td><a href="#">Charte qualité</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">Soumettre votre hôtel</a></td>
+								</tr>
+							</table>
+						</div>
+						<div class="footer-column">
+							<table>
+								<tr>
+									<th>Assistance</th>
+								</tr>
+								<tr>
+									<td><a href="#">Centre d'aide</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">Nous contacter</a></td>
+								</tr>
+							</table>
+						</div>
+					</div>
 				</nav>
 			</footer>
 		</div>
