@@ -207,10 +207,11 @@ header nav {
     background-color: white;
     color: black;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     height: 46px;
-    margin-left: 48px;
+    margin-bottom: 4px;
+    margin-left: 20px;
     padding-right: 21px;
 }
 
@@ -299,6 +300,12 @@ header nav {
     max-width: 1337px;
 }
 
+#activity-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 #activity-title {
     margin-bottom: 25px;
 }
@@ -312,6 +319,7 @@ header nav {
     font-size: 1.1em;
     font-weight: bold;
     height: 112px;
+    max-width: 929px;
 }
 
 #filter-economic:hover {
@@ -336,6 +344,8 @@ header nav {
 }
 
 #hosting {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 60px;
     margin-left: 50px;
     margin-top: 36px;
@@ -347,6 +357,12 @@ header nav {
     border-radius: 17px;
     padding: 24px;
     width: 62%;
+}
+
+#hosting-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #hosting-more {
@@ -489,4 +505,58 @@ header nav {
     line-height: 1.6em;
 }
 
-/*************************************************************/
+/* =================================== MEDIA QUERIES =================================== */
+/* and (min-width: 481px) */
+@media all and (max-width: 1440px) /* règles CSS pour tablettes */
+{
+    /***************** Redéfinition des balises ******************/
+    header {
+        margin-right: 50px;
+    }
+    /******************** Définition des CLASS *******************/
+    .activity-column {
+        height: 446px;
+        margin-bottom: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    /********************* Définition des ID *********************/
+    #activity {
+        margin-right: 50px;
+    }
+
+    #activity-container {
+        justify-content: space-around;
+    }
+    
+    #bloc-page
+    {
+        width: auto;
+    }
+
+    #card-h-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #filter {
+        margin-right: 50px;
+    }
+
+    #hosting {
+        flex-direction: column;
+        margin-right: 50px;
+    }
+
+    #hosting-classic {
+        margin-bottom: 50px;
+        width: auto;
+    }
+}
+
+/* @media all and (max-device-width: 480px) */
+@media all and (max-width: 480px) /* règles CSS pour smartphones */
+{
+
+}
