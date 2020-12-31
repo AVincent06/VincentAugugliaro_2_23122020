@@ -230,6 +230,12 @@ header nav {
     width: 51px;
 }
 
+.footer-column {
+    margin-top: 7px;
+    min-width: 250px;
+    width: 33%;
+}
+
 .gray {
     color: var(--myGray);
     left: -4px;
@@ -341,6 +347,12 @@ header nav {
 #filter-title {
     font-size: 1.1em;
     font-weight: bold;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
 }
 
 #hosting {
@@ -512,6 +524,10 @@ header nav {
     /***************** Redéfinition des balises ******************/
     header {
         margin-right: 50px;
+    }
+
+    footer {
+        max-height: none;
     }
     /******************** Définition des CLASS *******************/
     .activity-column {
