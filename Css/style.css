@@ -6,6 +6,7 @@
     --myBlue:       #0065fc; /* var(--myBlue); */
     --myLightBlue:  #deebff; /* var(--myLightBlue); */
     --myGray:       #f2f2f2; /* var(--myGray); */
+    --myDarkGray:   #d9d9d9; /* var(--myDarkGray); */
 }
 
 /***************** Redéfinition des balises ******************/
@@ -226,7 +227,19 @@ header {
     display: flex;
 }
 
-.container:hover > .disk {
+.resize-economic:hover > .disk {
+    transform: rotate(0deg);
+}
+
+.resize-family:hover > .disk {
+    transform: rotate(0deg);
+}
+
+.resize-pets:hover > .disk {
+    transform: rotate(0deg);
+}
+
+.resize-romantic:hover > .disk {
     transform: rotate(0deg);
 }
 
@@ -246,7 +259,7 @@ header {
 }
 
 .filter-button {
-    border: 2px solid #d9d9d9;
+    border: 2px solid var(--myDarkGray);
     border-left: none;
     border-radius: 0px 50px 50px 0px;
     background-color: white;
@@ -321,7 +334,7 @@ header {
 }
 
 .gray {
-    color: var(--myGray);
+    color: var(--myDarkGray);
     left: -4px;
     position: relative;
 }
@@ -382,7 +395,7 @@ header {
 }
 
 .info {
-    border: 1px solid  #d9d9d9;
+    border: 1px solid  var(--myDarkGray);
     border-radius: 12px 12px 12px 12px;
     color: var(--myBlue);
     height: 24px;
@@ -690,13 +703,58 @@ header {
     header {
         height: 132px;
     }
-    /***************** Redéfinition des CLASS ******************/
+    
+    footer {
+        background-color: var(--myGray);
+        height: auto;
+        max-height: 485px;
+        padding-bottom: 26px;
+        padding-left: 29px;
+        padding-right:  0px;
+        padding-top: 38px;
+    }
+
+/***************** Redéfinition des CLASS ******************/
+    .activity-card {
+        height:auto;
+        margin-bottom: 24px;
+        max-height: none;
+        max-width: none;
+        width:auto;
+    }
+
+    .activity-column {
+        display: flex;
+        flex-direction: column;
+        height:auto;
+        justify-content: unset;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .activity-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        flex-wrap: unset;
+    }
+    
+    .activity-frame-xl, .activity-frame-l, .activity-frame-m, .activity-frame-s, .activity-frame-xs {
+        height: 134px;
+        width: auto;     
+    }
+
     .activity-menu {
         border-top: none;
         border-bottom: 2px solid var(--myGray);
         padding-top: 0px;
         text-align: center ;
         width: 50%;
+    }
+
+    .activity-title {
+        margin-bottom: 32px;
     }
     
     .anchored-menu {
@@ -706,6 +764,44 @@ header {
         position: static;
         top: 0px;
         width: auto;
+    }
+
+    .card {
+        height: 184px;
+        margin-bottom: 12px;
+        width: auto;
+    }
+    
+    .card-description {
+        background-color: white;
+        line-height: 1.4em;
+        padding-left: 12px;
+        padding-top: 0px;
+        position: absolute;
+        top: 119px;
+        width: 100%;
+    }
+
+    .card-frame {
+        height: 114px;
+        position:absolute;
+        width: 100%; 
+    }
+
+    .card-h {
+        display: flex;
+        max-height: 144px;
+        margin-bottom: 11px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: auto;
+    }
+
+    .card-h-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        flex-wrap: unset;
     }
 
     .filter {
@@ -736,6 +832,31 @@ header {
         display: flex;
     }
 
+    .footer-column {
+        margin-top: 0px;
+        margin-bottom: 23px;
+        min-width: 250px;
+        width: 33%;
+    }
+
+    .hosting-classic {
+        background-color: white;
+        border-radius: unset;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 41px;
+        width: auto;
+    }
+
+    .hosting-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        flex-wrap: unset;
+    }
+
     .hosting-menu {
         border-top: none;
         border-bottom: 2px solid var(--myBlue);
@@ -744,11 +865,54 @@ header {
         width: 50%;
     }
     
+    .hosting-more {
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-top: 23px;
+    }
+
+    .hosting-popular {
+        border-radius: unset;
+        padding-bottom: 26px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+    }
+
+    .hosting-popular-title {
+        margin-bottom: 25px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+    .hosting-title {
+        margin-bottom: 19px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    
+    .info {
+        border-radius: 10px 10px 10px 10px;
+        font-size: 0.8em;
+        height: 20px;
+        margin-right: 15px;
+        min-width: 20px;
+    }
+    
     .logo {
         margin-left: 21px;
         margin-top: 24px;
     }
+
+    .photo-10 {
+        background: url('../Images/activity/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg') center/100% no-repeat;
+    }
     
+    .photo-13 {
+        background: url('../Images/activity/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg') center/100% no-repeat;
+    }
+
     .register {
         display: none;
     }
@@ -811,7 +975,28 @@ header {
     .tools p {
         line-height: 1.6em;
     }
+
     /********************* Définition des ID *********************/
+    #activity {
+        margin-bottom: 26px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0px;
+        max-width:none;
+        width: auto;
+    }
+
+    #hosting {
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: space-between;
+        margin-bottom: 57px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 36px;
+        max-width: none;
+        width: auto;
+    }
     #recherche {
         font-size: 1em;
         width: 241px;
