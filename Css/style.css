@@ -643,11 +643,11 @@ header {
     width: 51px;
 }
 
-/* =============================================================================================== */
-/* ======================================== MEDIA QUERIES ======================================== */
-/* =============================================================================================== */
+/* =================================================================================== */
+/* ================================== MEDIA QUERIES ================================== */
+/* =================================================================================== */
 
-@media all and (max-width: 1440px) { /* règles CSS pour tablettes */
+@media all and (max-width: 1440px) { /************************************************** règles CSS pour < 1440 */
     /***************** Redéfinition des balises ******************/
     header {
         margin-right: 50px;
@@ -669,6 +669,7 @@ header {
     }
     
     .bloc-page {
+        margin:unset;
         width: auto;
     }
 
@@ -697,8 +698,37 @@ header {
         margin-right: 50px;
     }
 }
+@media all and (max-width: 1024px) { /************************************************** règles CSS pour TABLETTE (iPad Pro) */
+    /***************** Redéfinition des balises ****************/
 
-@media all and (max-width: 500px) { /* règles CSS pour smartphones */
+    /***************** Redéfinition des CLASS ******************/
+    .anchored-menu {
+        display: flex;
+        left: 50%;
+        position: absolute;
+        top: 0px;
+    }
+    
+    /********************* Définition des ID *******************/
+
+}
+
+@media all and (max-width: 768px) { /************************************************** règles CSS pour TABLETTE (iPad) */
+    /***************** Redéfinition des balises ****************/
+
+    /***************** Redéfinition des CLASS ******************/
+    .anchored-menu {
+        display: flex;
+        left: 35%;
+        position: absolute;
+        top: 0px;
+    }
+    
+    /********************* Définition des ID *******************/
+
+}
+
+@media all and (max-width: 500px) { /************************************************* règles CSS pour SMARTPHONE */
     /***************** Redéfinition des balises ******************/
     header {
         height: 132px;
@@ -748,6 +778,7 @@ header {
     .activity-menu {
         border-top: none;
         border-bottom: 2px solid var(--myGray);
+        padding-bottom: 13px;
         padding-top: 0px;
         text-align: center ;
         width: 50%;
@@ -860,6 +891,7 @@ header {
     .hosting-menu {
         border-top: none;
         border-bottom: 2px solid var(--myBlue);
+        padding-bottom: 13px;
         padding-top: 0px;
         text-align: center ;
         width: 50%;
