@@ -38,8 +38,20 @@ footer th {
     width: 33%;
 }
 
+footer th h2 {
+    font-size: 1.1em;
+    font-weight:bold;
+}
+
 footer tr {
     height: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {    /* retrait du style pour usage purament sémantique */
+    display: inline;
+    margin: 0em;
+	font-size: 1em;
+	font-weight: normal;
 }
 
 header {
@@ -723,7 +735,38 @@ header {
         position: absolute;
         top: 0px;
     }
+
+    .card-h-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    flex-wrap: unset;
+    }
+
+    .filter {
+        height: auto;
+        max-width: auto;
+    }    
     
+    .filter-title {
+        display: none;
+    }
+    
+    .filter-title-mobile {
+        display: flex;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .search-bar {
+        margin-bottom: 10px;
+    }
+
     /********************* Définition des ID *******************/
 
 }
@@ -829,6 +872,7 @@ header {
     }
 
     .card-h-container {
+        align-items:unset;
         display: flex;
         flex-direction: column;
         justify-content: unset;
@@ -868,6 +912,12 @@ header {
         margin-bottom: 23px;
         min-width: 250px;
         width: 33%;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
     }
 
     .hosting-classic {
