@@ -723,7 +723,38 @@ header {
         position: absolute;
         top: 0px;
     }
+
+    .card-h-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    flex-wrap: unset;
+    }
+
+    .filter {
+        height: auto;
+        max-width: auto;
+    }    
     
+    .filter-title {
+        display: none;
+    }
+    
+    .filter-title-mobile {
+        display: flex;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .search-bar {
+        margin-bottom: 10px;
+    }
+
     /********************* Définition des ID *******************/
 
 }
@@ -829,6 +860,7 @@ header {
     }
 
     .card-h-container {
+        align-items:unset;
         display: flex;
         flex-direction: column;
         justify-content: unset;
@@ -868,6 +900,12 @@ header {
         margin-bottom: 23px;
         min-width: 250px;
         width: 33%;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
     }
 
     .hosting-classic {
