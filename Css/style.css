@@ -38,8 +38,20 @@ footer th {
     width: 33%;
 }
 
+footer th h2 {
+    font-size: 1.1em;
+    font-weight:bold;
+}
+
 footer tr {
     height: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {    /* retrait du style pour usage purament sémantique */
+    display: inline;
+    margin: 0em;
+	font-size: 1em;
+	font-weight: normal;
 }
 
 header {
