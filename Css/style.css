@@ -503,7 +503,7 @@ strong {
     border-top: 2px solid white;
     color: var(--myBlue);
     font-weight: bold;
-    margin-right: 75px;
+    margin-right: 50px;
     padding-top: 47px;
     text-align: center ;
     width: 142px;
@@ -514,22 +514,6 @@ strong {
 }
 
 .register a:visited {
-    color: var(--myBlue);
-}
-
-.register-mobile {
-    display: none;
-    margin-top: 49px;
-    margin-right: 75px;
-}
-
-.register-mobile a {
-    color: var(--myBlue);
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.register-mobile a:visited {
     color: var(--myBlue);
 }
 
@@ -1019,13 +1003,7 @@ strong {
     }
 
     .register {
-        display: none;
-    }
-
-    .register-mobile {
-        display: block;
-        margin-top: 43px;
-        margin-right: 20px;
+        margin-right: 0px;
     }
 
     .resize-economic {
