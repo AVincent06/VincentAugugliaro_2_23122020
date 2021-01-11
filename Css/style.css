@@ -56,6 +56,10 @@ h2, h3, h4, h5, h6 {    /* retrait du style pour usage purament sémantique */
 	font-weight: normal;
 }
 
+h3 {
+    display: inline;
+}
+
 header {
     height : 110px;
     position: relative;
